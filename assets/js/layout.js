@@ -13,16 +13,19 @@ window.toggleTheme = function toggleTheme() {
   }
 };
 document.addEventListener("DOMContentLoaded", () => {
-  // Detect subfolder depth to set correct relative asset path
-  const isSubFolder =
+  let basePath = "";
+  if (window.location.pathname.includes("/packages/")) {
+    basePath = "../../";
+  } else if (
     window.location.pathname.includes("/blog/") ||
     window.location.pathname.includes("/companies/") ||
     window.location.pathname.includes("/contact/") ||
     window.location.pathname.includes("/order/") ||
     window.location.pathname.includes("/reviews/") ||
-    window.location.pathname.includes("/speedtest/");
-
-  const basePath = isSubFolder ? "../" : "";
+    window.location.pathname.includes("/speedtest/")
+  ) {
+    basePath = "../";
+  }
 
   // Render Navbar Header
   const headerContainer = document.getElementById("global-header");
