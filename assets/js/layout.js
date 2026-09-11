@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="flex items-center gap-3 text-slate-300">
                         <i class="fa-solid fa-location-dot text-sky-400"></i>
-                        <span>المقر: الدمام، المنطقة الشرقية - المملكة العربية السعودية</span>
+                        <span>المقر: الدمام، المنطقة السعودية - المملكة العربية السعودية</span>
                     </div>
                 </div>
             </div>
