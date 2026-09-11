@@ -1,0 +1,30 @@
+# Robots.txt for Fiber 5G Dammam
+User-agent: *
+Allow: /
+
+# Explicitly allow AI Search Crawlers & LLM Indexers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# XML Sitemap & AI Knowledge Files
+Sitemap: https://fiber-5g-internet.com/sitemap.xml
+# LLM Context File: https://fiber-5g-internet.com/llms.txt
+# Machine Readable Pricing: https://fiber-5g-internet.com/pricing.md

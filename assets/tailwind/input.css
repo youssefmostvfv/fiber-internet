@@ -1,0 +1,11 @@
+@import "../fonts/almarai.css";
+@import "../fontawesome/all.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Global Font Override */
+body {
+    font-family: 'Almarai', sans-serif;
+}
