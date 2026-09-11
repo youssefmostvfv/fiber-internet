@@ -1,3 +1,5 @@
+.agents/
+_docs/
 node_modules/
 assets/tailwind/node_modules/
 .DS_Store
