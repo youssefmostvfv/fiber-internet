@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <div class="text-right">
                 <h4 class="text-base font-black text-slate-900 dark:text-white">${item.name}</h4>
-                <p class="text-xs text-slate-500 dark:text-slate-400">${item.city || "الدمام"}</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">${item.city || "السعودية"}</p>
               </div>
             </div>
             <span class="px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-sky-300 text-[11px] font-bold border border-blue-200/60 dark:border-blue-800/60">
@@ -420,7 +420,7 @@ window.handleQuickCheck = function (event) {
 
   if (!district) return;
 
-  const message = `مرحباً، حاب أتحقق من تغطية الفايبر في الدمام:\n- الحي: ${district}\n- رقم البوكسية: ${box}`;
+  const message = `مرحباً، حاب أتحقق من تغطية الفايبر بالسعودية:\n- الحي: ${district}\n- رقم البوكسية: ${box}`;
   const whatsappUrl = `https://wa.me/966530810532?text=${encodeURIComponent(message)}`;
 
   window.open(whatsappUrl, "_blank");

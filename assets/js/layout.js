@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 Fiber 5G
                             </span>
                             <span class="text-[10px] text-slate-500 dark:text-slate-400 font-bold tracking-wider -mt-1 uppercase">
-                                موزع معتمد بالدمام
+                                موزع معتمد بالمملكة العربية السعودية
                             </span>
                         </div>
                     </a>
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <!-- Companies Grid -->
                     <div class="space-y-2">
-                        <div class="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-400 px-1">المشغلين المعتمدين بالدمام</div>
+                        <div class="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-400 px-1">المشغلين المعتمدين بالسعودية</div>
                         <div class="grid grid-cols-2 gap-2.5">
                             <a href="${basePath}companies/stc/index.html" class="flex items-center gap-3 p-3 rounded-2xl bg-purple-50/80 dark:bg-purple-950/30 border border-purple-200/60 dark:border-purple-900/40 hover:scale-[1.02] transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-purple-700 text-white font-extrabold text-[10px] flex items-center justify-center shadow-sm">STC</div>
@@ -354,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </a>
 
                 <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-normal">
-                    منصتك المتكاملة لاختيار وتفعيل أسرع باقات الألياف الضوئية والانترنت المنزلي الـ 5G من أفضل المشغلين المعتمدين بالمملكة العربية السعودية (STC، سلام، موبايلي، زين). تركيزات خاصة لتغطية الدمام والسعودية وكافة المدن.
+                    منصتك المتكاملة لاختيار وتفعيل أسرع باقات الألياف الضوئية والانترنت المنزلي الـ 5G من أفضل المشغلين المعتمدين بالمملكة العربية السعودية (STC، سلام، موبايلي، زين). تغطية شاملة وفورية لجميع مدن ومناطق المملكة العربية السعودية.
                 </p>
 
                 <!-- Contact Pills -->
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="flex items-center gap-3 text-slate-300">
                         <i class="fa-solid fa-location-dot text-sky-400"></i>
-                        <span>المقر: الدمام، المنطقة السعودية - المملكة العربية السعودية</span>
+                        <span>التغطية: كافة مدن ومناطق المملكة العربية السعودية</span>
                     </div>
                 </div>
             </div>
@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     تغطية المناطق والخدمات
                 </h4>
                 <ul class="space-y-2.5 text-xs font-bold">
-                    <li><a href="${basePath}index.html#representatives" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-location-dot text-[10px] text-emerald-400"></i>مندوب الدمام والسعودية</a></li>
+                    <li><a href="${basePath}index.html#representatives" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-location-dot text-[10px] text-emerald-400"></i>الموزع المعتمد بالسعودية</a></li>
                     <li><a href="${basePath}index.html#representatives" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-location-dot text-[10px] text-blue-400"></i>مندوب الرياض</a></li>
                     <li><a href="${basePath}index.html#representatives" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-location-dot text-[10px] text-sky-400"></i>مندوب جدة والمكّة</a></li>
                     <li><a href="${basePath}index.html#dammam-coverage" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-box text-[10px] text-amber-400"></i>فحص البوكسية والكبائن</a></li>

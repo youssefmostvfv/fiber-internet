@@ -48,7 +48,7 @@ if ($method === 'POST') {
     }
     
     $name = isset($input['name']) ? trim(strip_tags($input['name'])) : '';
-    $city = isset($input['city']) ? trim(strip_tags($input['city'])) : 'الدمام';
+    $city = isset($input['city']) ? trim(strip_tags($input['city'])) : 'السعودية';
     $provider = isset($input['provider']) ? trim(strip_tags($input['provider'])) : 'STC فايبر';
     $rating = isset($input['rating']) ? intval($input['rating']) : 5;
     $comment = isset($input['comment']) ? trim(strip_tags($input['comment'])) : '';

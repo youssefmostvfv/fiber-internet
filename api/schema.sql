@@ -6,7 +6,7 @@
 CREATE TABLE IF NOT EXISTS `customer_reviews` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(100) NOT NULL,
-  `city` VARCHAR(100) NOT NULL DEFAULT 'الدمام',
+  `city` VARCHAR(100) NOT NULL DEFAULT 'السعودية',
   `provider` VARCHAR(100) NOT NULL DEFAULT 'STC فايبر',
   `rating` TINYINT NOT NULL DEFAULT 5,
   `comment` TEXT NOT NULL,
