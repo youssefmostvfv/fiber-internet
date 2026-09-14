@@ -14,7 +14,13 @@ window.toggleTheme = function toggleTheme() {
 };
 document.addEventListener("DOMContentLoaded", () => {
   let basePath = "";
-  if (window.location.pathname.includes("/packages/")) {
+  if (
+    window.location.pathname.includes("/packages/") ||
+    window.location.pathname.includes("/companies/stc") ||
+    window.location.pathname.includes("/companies/salam") ||
+    window.location.pathname.includes("/companies/mobily") ||
+    window.location.pathname.includes("/companies/zain")
+  ) {
     basePath = "../../";
   } else if (
     window.location.pathname.includes("/blog/") ||
@@ -67,28 +73,28 @@ document.addEventListener("DOMContentLoaded", () => {
                             
                             <!-- Dropdown Menu -->
                             <div class="absolute right-0 mt-1 w-56 rounded-2xl bg-white dark:bg-slate-900 shadow-xl border border-gray-100 dark:border-slate-800 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 p-2">
-                                <a href="${basePath}companies/stc.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-950/40 text-gray-700 dark:text-slate-200 hover:text-stc-primary dark:hover:text-purple-400 transition-colors cursor-pointer group/item">
+                                <a href="${basePath}companies/stc/index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-950/40 text-gray-700 dark:text-slate-200 hover:text-stc-primary dark:hover:text-purple-400 transition-colors cursor-pointer group/item">
                                     <span class="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-stc-primary dark:text-purple-300 font-extrabold text-xs">STC</span>
                                     <div>
                                         <div class="text-xs font-bold">إس تي سي (STC)</div>
                                         <div class="text-[10px] text-gray-400 dark:text-slate-400">فايبر & 5G بيتي</div>
                                     </div>
                                 </a>
-                                <a href="${basePath}companies/salam.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-gray-700 dark:text-slate-200 hover:text-salam-primary dark:hover:text-emerald-400 transition-colors cursor-pointer group/item">
+                                <a href="${basePath}companies/salam/index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-gray-700 dark:text-slate-200 hover:text-salam-primary dark:hover:text-emerald-400 transition-colors cursor-pointer group/item">
                                     <span class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-salam-primary dark:text-emerald-300 font-extrabold text-xs">Salam</span>
                                     <div>
                                         <div class="text-xs font-bold">سلام (Salam)</div>
                                         <div class="text-[10px] text-gray-400 dark:text-slate-400">ألياف سلام الفائقة</div>
                                     </div>
                                 </a>
-                                <a href="${basePath}companies/mobily.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-sky-50 dark:hover:bg-sky-950/40 text-gray-700 dark:text-slate-200 hover:text-mobily-primary dark:hover:text-sky-400 transition-colors cursor-pointer group/item">
+                                <a href="${basePath}companies/mobily/index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-sky-50 dark:hover:bg-sky-950/40 text-gray-700 dark:text-slate-200 hover:text-mobily-primary dark:hover:text-sky-400 transition-colors cursor-pointer group/item">
                                     <span class="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/50 flex items-center justify-center text-mobily-primary dark:text-sky-300 font-extrabold text-xs">Mobily</span>
                                     <div>
                                         <div class="text-xs font-bold">موبايلي (Mobily)</div>
                                         <div class="text-[10px] text-gray-400 dark:text-slate-400">فايبر وإير فايبر</div>
                                     </div>
                                 </a>
-                                <a href="${basePath}companies/zain.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-fuchsia-50 dark:hover:bg-fuchsia-950/40 text-gray-700 dark:text-slate-200 hover:text-zain-primary dark:hover:text-fuchsia-400 transition-colors cursor-pointer group/item">
+                                <a href="${basePath}companies/zain/index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-fuchsia-50 dark:hover:bg-fuchsia-950/40 text-gray-700 dark:text-slate-200 hover:text-zain-primary dark:hover:text-fuchsia-400 transition-colors cursor-pointer group/item">
                                     <span class="w-8 h-8 rounded-lg bg-fuchsia-100 dark:bg-fuchsia-900/50 flex items-center justify-center text-zain-primary dark:text-fuchsia-300 font-extrabold text-xs">Zain</span>
                                     <div>
                                         <div class="text-xs font-bold">زين (Zain)</div>
@@ -98,32 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             </div>
                         </div>
 
-                        <!-- الباقات (Dropdown) -->
-                        <div class="relative group">
-                            <button type="button" class="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-sky-400 hover:bg-gray-100/70 dark:hover:bg-slate-800/70 transition-colors flex items-center gap-1.5 cursor-pointer">
-                                <i class="fa-solid fa-cubes text-gray-400 text-xs"></i>
-                                الباقات
-                                <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-300"></i>
-                            </button>
-                            
-                            <!-- Dropdown Menu -->
-                            <div class="absolute right-0 mt-1 w-52 rounded-2xl bg-white dark:bg-slate-900 shadow-xl border border-gray-100 dark:border-slate-800 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 p-2">
-                                <a href="${basePath}index.html#fiber-packages" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-950/40 text-gray-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-sky-400 transition-colors cursor-pointer">
-                                    <i class="fa-solid fa-network-wired text-blue-600 text-sm"></i>
-                                    <div>
-                                        <div class="text-xs font-bold">باقات الفايبر المنزلي</div>
-                                        <div class="text-[10px] text-gray-400 dark:text-slate-400">سرعات تصل 500 ميجا</div>
-                                    </div>
-                                </a>
-                                <a href="${basePath}index.html#5g-packages" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-gray-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors cursor-pointer">
-                                    <i class="fa-solid fa-tower-cell text-emerald-600 text-sm"></i>
-                                    <div>
-                                        <div class="text-xs font-bold">باقات الـ 5G والراوترات</div>
-                                        <div class="text-[10px] text-gray-400 dark:text-slate-400">إنترنت هوائي لا محدود</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <!-- الباقات -->
+                        <a href="${basePath}index.html#packages" class="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-sky-400 hover:bg-gray-100/70 dark:hover:bg-slate-800/70 transition-colors cursor-pointer flex items-center gap-1.5">
+                            <i class="fa-solid fa-cubes text-gray-400 text-xs"></i>
+                            الباقات
+                        </a>
 
                         <!-- آراء العملاء -->
                         <a href="${basePath}reviews/index.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-sky-400 hover:bg-gray-100/70 dark:hover:bg-slate-800/70 transition-colors cursor-pointer flex items-center gap-1.5">
@@ -187,14 +172,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         </a>
 
                         <div class="grid grid-cols-2 gap-2.5 pt-1">
-                            <a href="${basePath}index.html#fiber-packages" class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 font-bold hover:border-blue-500/40 transition-all">
+                            <a href="${basePath}index.html#packages" class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 font-bold hover:border-blue-500/40 transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-blue-600/10 text-blue-600 dark:text-sky-400 flex items-center justify-center text-xs">
                                     <i class="fa-solid fa-network-wired"></i>
                                 </div>
                                 <span class="text-xs">باقات الفايبر</span>
                             </a>
 
-                            <a href="${basePath}index.html#5g-packages" class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 font-bold hover:border-emerald-500/40 transition-all">
+                            <a href="${basePath}index.html#packages" class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 font-bold hover:border-emerald-500/40 transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-emerald-600/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xs">
                                     <i class="fa-solid fa-tower-cell"></i>
                                 </div>
@@ -207,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="space-y-2">
                         <div class="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-400 px-1">المشغلين المعتمدين بالدمام</div>
                         <div class="grid grid-cols-2 gap-2.5">
-                            <a href="${basePath}companies/stc.html" class="flex items-center gap-3 p-3 rounded-2xl bg-purple-50/80 dark:bg-purple-950/30 border border-purple-200/60 dark:border-purple-900/40 hover:scale-[1.02] transition-all">
+                            <a href="${basePath}companies/stc/index.html" class="flex items-center gap-3 p-3 rounded-2xl bg-purple-50/80 dark:bg-purple-950/30 border border-purple-200/60 dark:border-purple-900/40 hover:scale-[1.02] transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-purple-700 text-white font-extrabold text-[10px] flex items-center justify-center shadow-sm">STC</div>
                                 <div>
                                     <div class="text-xs font-black text-slate-900 dark:text-white">إس تي سي</div>
@@ -215,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </div>
                             </a>
 
-                            <a href="${basePath}companies/salam.html" class="flex items-center gap-3 p-3 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-900/40 hover:scale-[1.02] transition-all">
+                            <a href="${basePath}companies/salam/index.html" class="flex items-center gap-3 p-3 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-900/40 hover:scale-[1.02] transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-extrabold text-[10px] flex items-center justify-center shadow-sm">سلام</div>
                                 <div>
                                     <div class="text-xs font-black text-slate-900 dark:text-white">Salam</div>
@@ -223,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </div>
                             </a>
 
-                            <a href="${basePath}companies/mobily.html" class="flex items-center gap-3 p-3 rounded-2xl bg-sky-50/80 dark:bg-sky-950/30 border border-sky-200/60 dark:border-sky-900/40 hover:scale-[1.02] transition-all">
+                            <a href="${basePath}companies/mobily/index.html" class="flex items-center gap-3 p-3 rounded-2xl bg-sky-50/80 dark:bg-sky-950/30 border border-sky-200/60 dark:border-sky-900/40 hover:scale-[1.02] transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-sky-600 text-white font-extrabold text-[10px] flex items-center justify-center shadow-sm">موبايلي</div>
                                 <div>
                                     <div class="text-xs font-black text-slate-900 dark:text-white">Mobily</div>
@@ -231,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </div>
                             </a>
 
-                            <a href="${basePath}companies/zain.html" class="flex items-center gap-3 p-3 rounded-2xl bg-fuchsia-50/80 dark:bg-fuchsia-950/30 border border-fuchsia-200/60 dark:border-fuchsia-900/40 hover:scale-[1.02] transition-all">
+                            <a href="${basePath}companies/zain/index.html" class="flex items-center gap-3 p-3 rounded-2xl bg-fuchsia-50/80 dark:bg-fuchsia-950/30 border border-fuchsia-200/60 dark:border-fuchsia-900/40 hover:scale-[1.02] transition-all">
                                 <div class="w-8 h-8 rounded-xl bg-fuchsia-600 text-white font-extrabold text-[10px] flex items-center justify-center shadow-sm">زين</div>
                                 <div>
                                     <div class="text-xs font-black text-slate-900 dark:text-white">Zain</div>
@@ -306,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
     floatingContainer.innerHTML = `
         <div class="fixed bottom-6 left-6 z-50 flex flex-col items-center gap-3">
             <!-- زر اتصال مباشر -->
-            <a href="tel:0500000000" aria-label="اتصال هاتفي" class="relative group w-12 h-12 rounded-full bg-slate-900/90 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-700/80 text-blue-400 hover:bg-blue-600 hover:text-white shadow-xl hover:scale-110 active:scale-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
+            <a href="tel:0530810532" aria-label="اتصال هاتفي" class="relative group w-12 h-12 rounded-full bg-slate-900/90 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-700/80 text-blue-400 hover:bg-blue-600 hover:text-white shadow-xl hover:scale-110 active:scale-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
                 <i class="fa-solid fa-phone-volume text-sm group-hover:scale-110 transition-transform"></i>
                 <span class="absolute left-full ml-3 whitespace-nowrap bg-slate-900 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl border border-slate-700 pointer-events-none">
                     اتصال هاتفي
@@ -314,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
 
             <!-- زر المحادثة الفورية عبر الواتساب -->
-            <a href="https://wa.me/966500000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AD%D8%A7%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85" target="_blank" rel="noopener noreferrer" aria-label="واتساب" class="relative group w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 hover:scale-110 active:scale-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
+            <a href="https://wa.me/966530810532?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AD%D8%A7%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85" target="_blank" rel="noopener noreferrer" aria-label="واتساب" class="relative group w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 hover:scale-110 active:scale-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
                 <i class="fa-brands fa-whatsapp text-xl group-hover:scale-110 transition-transform"></i>
                 <span class="absolute left-full ml-3 whitespace-nowrap bg-slate-900 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl border border-slate-700 pointer-events-none">
                     واتساب الفني
@@ -396,8 +381,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </h4>
                 <ul class="space-y-2.5 text-xs font-bold">
                     <li><a href="${basePath}index.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>الرئيسية</a></li>
-                    <li><a href="${basePath}index.html#fiber-packages" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>باقات الفايبر المنزلي</a></li>
-                    <li><a href="${basePath}index.html#5g-packages" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>باقات الـ 5G والراوترات</a></li>
+                    <li><a href="${basePath}index.html#packages" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>باقات الفايبر المنزلي</a></li>
+                    <li><a href="${basePath}index.html#packages" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>باقات الـ 5G والراوترات</a></li>
                     <li><a href="${basePath}reviews/index.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-amber-500"></i>آراء وتجارب العملاء</a></li>
                     <li><a href="${basePath}speedtest/index.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-sky-400"></i>قياس سرعة النت</a></li>
                     <li><a href="${basePath}blog/index.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-left text-[10px] text-blue-500"></i>مدونة الاتصالات</a></li>
@@ -411,10 +396,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     المشغلين المعتمدين
                 </h4>
                 <ul class="space-y-2.5 text-xs font-bold">
-                    <li><a href="${basePath}companies/stc.html" class="hover:text-purple-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-purple-400"></i>إس تي سي STC فايبر</a></li>
-                    <li><a href="${basePath}companies/salam.html" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-emerald-400"></i>سلام Salam فايبر</a></li>
-                    <li><a href="${basePath}companies/mobily.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-sky-400"></i>موبايلي Mobily فايبر</a></li>
-                    <li><a href="${basePath}companies/zain.html" class="hover:text-fuchsia-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-fuchsia-400"></i>زين Zain 5G وفايبر</a></li>
+                    <li><a href="${basePath}companies/stc/index.html" class="hover:text-purple-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-purple-400"></i>إس تي سي STC فايبر</a></li>
+                    <li><a href="${basePath}companies/salam/index.html" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-emerald-400"></i>سلام Salam فايبر</a></li>
+                    <li><a href="${basePath}companies/mobily/index.html" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-sky-400"></i>موبايلي Mobily فايبر</a></li>
+                    <li><a href="${basePath}companies/zain/index.html" class="hover:text-fuchsia-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-fuchsia-400"></i>زين Zain 5G وفايبر</a></li>
                     <li><a href="${basePath}packages/stc-fiber/" class="hover:text-sky-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-blue-400"></i>عروض STC بيتي فايبر</a></li>
                     <li><a href="${basePath}packages/salam-fiber/" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-emerald-400"></i>عروض سلام ألياف 300M</a></li>
                 </ul>

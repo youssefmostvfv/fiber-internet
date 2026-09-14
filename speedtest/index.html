@@ -33,11 +33,164 @@
     <!-- Global Header Navbar Container -->
     <div id="global-header"></div>
 
-    <!-- Page Content Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-3xl font-extrabold text-blue-600 dark:text-sky-400">أداة قياس سرعة الإنترنت (Speed Test)</h1>
-        <p class="mt-2 text-slate-600 dark:text-slate-400">اقس سرعة باقتك الحالية وتعرف على باقات الترقية المتاحة لأحياء
-            الدمام.</p>
+    <!-- Main Content Container -->
+    <main class="pt-28 pb-20 lg:pt-36 lg:pb-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+            <!-- Hero Section -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-50 dark:bg-blue-950/60 border-r-4 border-r-blue-600 text-blue-700 dark:text-blue-300 text-xs sm:text-sm font-extrabold shadow-sm">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>أدوات فحص السرعة المعتمدة</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white leading-tight">
+                    قياس <span class="text-blue-600 dark:text-blue-400">سرعة الإنترنت والبنق</span> بدقة عالية
+                </h1>
+
+                <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+                    اختبر سرعة التحميل (Download) والرفع (Upload) وسرعة استجابة الشبكة (Ping) لباقتك الحالية عبر أفضل المنصات العالمية الموثوقة لضمان أداء استثنائي لألعاب الأونلاين والتصفح.
+                </p>
+
+                <!-- Trust Elements -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 pt-1">
+                    <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <i class="fa-solid fa-server text-emerald-500 text-sm"></i>
+                        <span class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">سيرفرات محلية ودولية</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <i class="fa-solid fa-check-double text-blue-600 dark:text-blue-400 text-sm"></i>
+                        <span class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">نتائج دقيقة 100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Grid of Speed test platforms -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto pt-8">
+                <!-- Ookla Card -->
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200/80 dark:border-slate-800 flex flex-col overflow-hidden group">
+                    <div class="h-2 bg-gradient-to-r from-emerald-400 to-emerald-600 w-full group-hover:h-3 transition-all duration-300"></div>
+                    <div class="p-6 flex flex-col flex-grow items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center mb-4 text-emerald-600 dark:text-emerald-400 text-4xl transform group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h2 class="text-xl font-black text-slate-900 dark:text-white mb-3">Speedtest by Ookla</h2>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed">المنصة الأشهر والأكثر استخداماً عالمياً. تقدم نتائج دقيقة وموثوقة لسرعة التحميل، الرفع، والبنق.</p>
+                        <a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl font-black text-white bg-emerald-600 hover:bg-emerald-700 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30">
+                            <span>اختبر سرعتك عبر Ookla</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fast.com Card -->
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200/80 dark:border-slate-800 flex flex-col overflow-hidden group">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-purple-700 w-full group-hover:h-3 transition-all duration-300"></div>
+                    <div class="p-6 flex flex-col flex-grow items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center mb-4 text-purple-600 dark:text-purple-400 text-4xl transform group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h2 class="text-xl font-black text-slate-900 dark:text-white mb-3">Fast.com</h2>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed">أداة خفيفة وسريعة من نتفليكس لمعرفة سرعة التحميل الفعلية بثوانٍ معدودة.</p>
+                        <a href="https://fast.com/ar/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl font-black text-white bg-purple-600 hover:bg-purple-700 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg shadow-purple-600/30">
+                            <span>اختبر سرعتك عبر Fast</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cloudflare Card -->
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200/80 dark:border-slate-800 flex flex-col overflow-hidden group md:col-span-2 lg:col-span-1">
+                    <div class="h-2 bg-gradient-to-r from-blue-400 to-blue-600 w-full group-hover:h-3 transition-all duration-300"></div>
+                    <div class="p-6 flex flex-col flex-grow items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-blue-600 dark:text-blue-400 text-4xl transform group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h2 class="text-xl font-black text-slate-900 dark:text-white mb-3">Cloudflare Speed</h2>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed">أداة احترافية من كلاودفلير تعرض تفاصيل تقنية دقيقة لجودة الشبكة واستقرارها.</p>
+                        <a href="https://speed.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl font-black text-white bg-blue-600 hover:bg-blue-700 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30">
+                            <span>اختبر سرعتك عبر Cloudflare</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Data Section (Information) -->
+            <section class="py-10 sm:py-14 bg-white/70 dark:bg-slate-900/70 rounded-3xl border border-slate-200/80 dark:border-slate-800 backdrop-blur-xl p-6 sm:p-10 shadow-xl space-y-8 relative overflow-hidden mt-16">
+                <!-- Ambient Glow -->
+                <div class="absolute -top-24 -right-24 w-80 h-80 bg-blue-600/10 dark:bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="space-y-4 text-center lg:text-right relative z-10">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950/60 border-r-4 border-r-blue-600 text-blue-700 dark:text-blue-300 text-xs sm:text-sm font-extrabold shadow-sm">
+                        <i class="fa-solid fa-book-open text-blue-600 dark:text-blue-400"></i>
+                        <span>دليل قياس السرعة</span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+                        كيف تقرأ <span class="text-blue-600 dark:text-blue-400">نتائج فحص السرعة</span> بشكل صحيح؟
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10 pt-2">
+                    <!-- Download -->
+                    <div class="bg-white dark:bg-slate-950 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 hover:border-emerald-500/50 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                        <h3 class="text-lg font-black text-slate-900 dark:text-white">سرعة التحميل (Download)</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            تقاس بالميجابت في الثانية (Mbps). وتدل على سرعة جلب البيانات من الإنترنت لجهازك. كلما زادت، أصبح تصفح الفيديوهات وتحميل الملفات أسرع.
+                        </p>
+                    </div>
+
+                    <!-- Upload -->
+                    <div class="bg-white dark:bg-slate-950 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 hover:border-purple-500/50 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+                        <h3 class="text-lg font-black text-slate-900 dark:text-white">سرعة الرفع (Upload)</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            تقاس أيضاً بـ Mbps، وتعني سرعة إرسال البيانات من جهازك إلى الإنترنت. مهمة جداً لمكالمات الفيديو، البث المباشر (الستريمنج)، ورفع الملفات السحابية.
+                        </p>
+                    </div>
+
+                    <!-- Ping -->
+                    <div class="bg-white dark:bg-slate-950 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 hover:border-blue-500/50 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <h3 class="text-lg font-black text-slate-900 dark:text-white">معدل الاستجابة (Ping)</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            يقاس بالملي ثانية (ms). وهو الوقت الذي تستغرقه البيانات للذهاب للسيرفر والعودة. كلما كان أقل كان أفضل، ويعتبر العامل الأهم للاعبين (الجيمنج).
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact / Upgrade Section -->
+            <section class="mt-8 bg-gradient-to-r from-blue-700 to-indigo-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden text-center">
+                <div class="relative z-10 space-y-6 max-w-3xl mx-auto">
+                    <h2 class="text-2xl sm:text-3xl font-black text-white">هل سرعتك الحالية لا تلبي احتياجاتك؟</h2>
+                    <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+                        نوفر لك أقوى باقات الفايبر والجيل الخامس 5G في الدمام والمنطقة الشرقية. احصل على سرعات تصل إلى 1000 ميجابت بأسعار تنافسية وتأسيس مجاني.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 pt-4">
+                        <a href="https://wa.me/966530810532" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white text-blue-800 font-black text-sm hover:bg-slate-100 transition-colors shadow-lg flex items-center gap-2 group">
+                            <i class="fa-brands fa-whatsapp text-lg text-emerald-500 group-hover:scale-110 transition-transform"></i>
+                            <span>تواصل عبر الواتساب</span>
+                        </a>
+                        <a href="tel:+966530810532" class="px-6 py-3 rounded-xl bg-blue-600/30 hover:bg-blue-600/50 border border-blue-400/30 text-white font-black text-sm transition-colors shadow-lg flex items-center gap-2 group">
+                            <i class="fa-solid fa-phone group-hover:scale-110 transition-transform"></i>
+                            <span>اتصل بنا الآن</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Decoration -->
+                <i class="fa-solid fa-wifi absolute -right-10 -bottom-10 text-9xl text-white/5 transform -rotate-12"></i>
+            </section>
+
+        </div>
     </main>
 
     <!-- Global Floating Actions Container -->

@@ -1,14 +1,11 @@
-// Theme Initialization
+// Theme Initialization (Default: Light Mode)
 document.addEventListener("DOMContentLoaded", () => {
   const htmlTag = document.documentElement;
 
-  // Check saved theme or system preference
+  // Check saved theme (Defaults to Light Mode if not explicitly set to 'dark')
   const savedTheme = localStorage.getItem("theme");
-  const systemPrefersDark = window.matchMedia(
-    "(prefers-color-scheme: dark)",
-  ).matches;
 
-  if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+  if (savedTheme === "dark") {
     htmlTag.classList.add("dark");
   } else {
     htmlTag.classList.remove("dark");
@@ -424,7 +421,7 @@ window.handleQuickCheck = function (event) {
   if (!district) return;
 
   const message = `مرحباً، حاب أتحقق من تغطية الفايبر في الدمام:\n- الحي: ${district}\n- رقم البوكسية: ${box}`;
-  const whatsappUrl = `https://wa.me/966500000000?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/966530810532?text=${encodeURIComponent(message)}`;
 
   window.open(whatsappUrl, "_blank");
 };
