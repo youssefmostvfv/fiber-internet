@@ -14,9 +14,49 @@
     <meta name="geo.region" content="SA">
     <meta name="geo.placename" content="المملكة العربية السعودية, Saudi Arabia">
 
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="تقديم طلب تأسيس فايبر و 5G في السعودية | الموزع المعتمد | Fiber 5G">
+    <meta property="og:description" content="نموذج تقديم طلب إلكتروني فوري لتأسيس إنترنت الألياف البصرية والفايبر والـ 5G في كافة مناطق المملكة العربية السعودية.">
+    <meta property="og:image" content="https://fiber-5g-internet.com/assets/images/fiber.webp">
+    <meta property="og:url" content="https://fiber-5g-internet.com/order/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- CSS Style & Fonts & FontAwesome -->
     <link rel="stylesheet" href="../assets/fontawesome/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "تقديم طلب تأسيس فايبر و 5G في السعودية",
+        "image": "https://fiber-5g-internet.com/assets/images/fiber.webp",
+        "description": "خدمة تقديم طلب إلكتروني لتأسيس إنترنت الألياف البصرية الضوئية والـ 5G لجميع شركات الاتصالات بالسعودية.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Fiber 5G"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.97",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "520",
+            "reviewCount": "490"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "SAR",
+            "lowPrice": "230",
+            "highPrice": "402.5",
+            "offerCount": "12",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
 
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -86,19 +126,19 @@
                 </label>
 
                 <!-- 5G Option -->
-                <label id="label-5g" class="cursor-pointer relative rounded-2xl border-2 border-slate-200 dark:border-slate-700 p-4 flex items-center justify-between hover:border-purple-300 transition-colors">
+                <label id="label-5g" class="cursor-pointer relative rounded-2xl border-2 border-slate-200 dark:border-slate-700 p-4 flex items-center justify-between hover:border-blue-300 transition-colors">
                     <input type="radio" name="service_type" value="5g" class="peer sr-only">
                     <div class="flex flex-col text-right w-full">
                         <div class="flex justify-between items-center w-full mb-1">
                             <span class="font-bold text-lg text-slate-900 dark:text-white">راوتر متنقل 5G</span>
-                            <div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center text-2xl shadow-sm">
-                                <i class="fa-solid fa-router"></i>
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl shadow-sm">
+                                <i class="fa-solid fa-wifi"></i>
                             </div>
                         </div>
                         <span class="text-sm text-slate-500">إنترنت لاسلكي في كل مكان</span>
                     </div>
                     <div class="absolute top-4 left-4 w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-600 flex items-center justify-center transition-colors" id="radio-circle-5g">
-                        <div class="w-2.5 h-2.5 rounded-full bg-purple-600 opacity-0 transition-opacity" id="radio-dot-5g"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-blue-600 opacity-0 transition-opacity" id="radio-dot-5g"></div>
                     </div>
                 </label>
             </div>
@@ -247,8 +287,8 @@
                 dotFiber.classList.remove('opacity-100');
                 
                 // Reset 5G Label
-                label5g.classList.remove('border-purple-600', 'bg-purple-50/50', 'dark:bg-purple-900/20');
-                circle5g.classList.remove('border-purple-600');
+                label5g.classList.remove('border-blue-600', 'bg-blue-50/50', 'dark:bg-blue-900/20');
+                circle5g.classList.remove('border-blue-600');
                 circle5g.classList.add('border-slate-300', 'dark:border-slate-600');
                 dot5g.classList.remove('opacity-100');
             }
@@ -278,7 +318,7 @@
                     submitBtn.style.color = '#ffffff';
                     
                     formLabelIcons.forEach(el => {
-                        el.classList.remove('text-purple-600', 'dark:text-purple-400');
+                        el.classList.remove('text-blue-600', 'dark:text-blue-400');
                         el.classList.add('text-indigo-600', 'dark:text-indigo-400');
                     });
                     
@@ -286,24 +326,24 @@
                     btnLocate.style.color = '#ffffff';
 
                 } else if (radio5g.checked) {
-                    label5g.classList.add('border-purple-600', 'bg-purple-50/50', 'dark:bg-purple-900/20');
+                    label5g.classList.add('border-blue-600', 'bg-blue-50/50', 'dark:bg-blue-900/20');
                     circle5g.classList.remove('border-slate-300', 'dark:border-slate-600');
-                    circle5g.classList.add('border-purple-600');
+                    circle5g.classList.add('border-blue-600');
                     dot5g.classList.add('opacity-100');
                     
                     formTitle.textContent = 'طلب راوتر متنقل 5G';
-                    formIcon.className = 'fa-solid fa-router';
-                    formIconContainer.className = 'w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-purple-50 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 shadow-sm';
+                    formIcon.className = 'fa-solid fa-wifi';
+                    formIconContainer.className = 'w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 shadow-sm';
                     
-                    submitBtn.style.backgroundColor = '#7e22ce'; // Purple 700
+                    submitBtn.style.backgroundColor = '#2563eb'; // Blue 600
                     submitBtn.style.color = '#ffffff';
                     
                     formLabelIcons.forEach(el => {
                         el.classList.remove('text-indigo-600', 'dark:text-indigo-400');
-                        el.classList.add('text-purple-600', 'dark:text-purple-400');
+                        el.classList.add('text-blue-600', 'dark:text-blue-400');
                     });
                     
-                    btnLocate.style.backgroundColor = '#7e22ce'; // Purple 700
+                    btnLocate.style.backgroundColor = '#2563eb'; // Blue 600
                     btnLocate.style.color = '#ffffff';
                 }
             }

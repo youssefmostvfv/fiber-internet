@@ -3,74 +3,117 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://fiber-5g-internet.com/</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://fiber-5g-internet.com/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <loc>https://fiber-5g-internet.com/order/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/reviews/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fiber-5g-internet.com/order/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
         <loc>https://fiber-5g-internet.com/speedtest/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/contact/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/blog/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/companies/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/companies/stc/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/companies/salam/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/companies/mobily/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://fiber-5g-internet.com/companies/zain/index.html</loc>
-        <lastmod>2026-09-11</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
+    </url>
+    <!-- Package Pages -->
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/stc-fiber/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/stc-5g/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/mobily-fiber-postpaid/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/mobily-fiber-prepaid/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/mobily-5g/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/zain-fiber/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/zain-5g/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://fiber-5g-internet.com/packages/salam-fiber/index.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>

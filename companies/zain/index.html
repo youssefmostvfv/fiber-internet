@@ -885,20 +885,49 @@
                 </div>
             </section>
 
-            <!-- JSON-LD Structured Data Schema for FAQPage -->
+            <!-- JSON-LD Structured Data Schema for FAQPage & Product -->
             <script type="application/ld+json">
             {
               "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
+              "@graph": [
                 {
-                  "@type": "Question",
-                  "name": "كيف يمكنني طلب تأسيس إنترنت زين 5G أو فايبر في السعودية؟",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "يمكنك طلب الخدمة مباشرة عن طريق التواصل مع المندوب المعتمد لمبيعات زين في السعودية عبر أزرار التقديم أو الواتساب، ليتم فحص التغطية وتوصيل جهاز 5G أو تركيب الفايبر في نفس اليوم."
+                  "@type": "Product",
+                  "name": "عروض وتأسيس زين 5G وفايبر المنزلي",
+                  "image": "https://fiber-5g-internet.com/assets/images/fiber.webp",
+                  "description": "خدمات تأسيس وإنترنت زين 5G اللاسلكية وفايبر الألياف الضوئية بالمملكة العربية السعودية.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Zain"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.90",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "210",
+                    "reviewCount": "195"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "SAR",
+                    "lowPrice": "230",
+                    "highPrice": "401",
+                    "offerCount": "5",
+                    "priceValidUntil": "2027-12-31",
+                    "availability": "https://schema.org/InStock"
                   }
                 },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "كيف يمكنني طلب تأسيس إنترنت زين 5G أو فايبر في السعودية؟",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "يمكنك طلب الخدمة مباشرة عن طريق التواصل مع المندوب المعتمد لمبيعات زين في السعودية عبر أزرار التقديم أو الواتساب، ليتم فحص التغطية وتوصيل جهاز 5G أو تركيب الفايبر في نفس اليوم."
+                      }
+                    },
                 {
                   "@type": "Question",
                   "name": "ما هي المستندات المطلوبة لتفعيل باقات زين 5G المفتوحة؟",
@@ -1012,6 +1041,7 @@
                   }
                 }
               ]
+            }
             }
             </script>
         </div>

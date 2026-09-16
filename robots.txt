@@ -28,3 +28,4 @@ Allow: /
 Sitemap: https://fiber-5g-internet.com/sitemap.xml
 # LLM Context File: https://fiber-5g-internet.com/llms.txt
 # Machine Readable Pricing: https://fiber-5g-internet.com/pricing.md
+# OKF Knowledge Bundle: https://fiber-5g-internet.com/okf/index.md
